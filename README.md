@@ -24,6 +24,6 @@ Dataset source: https://archive.ics.uci.edu/dataset/165/concrete+compressive+str
 - `Kaynakca.bib`: bibliographic records (check metadata against original publications before reuse).
 
 ## Reproducibility notes
-The original notebook does **not** explicitly set `random_state` in every repeated depth experiment. Exact reproduction of all reported depth statistics is therefore not guaranteed. Figures `10_Egitim_Dogrulama_Kayip.png` and `11_Egitim_Dogrulama_RMSE.png` come from a **separate 250-epoch control experiment**, not the original early-stopping run. These should not be presented as loss curves from that original run.
+The original notebook explicitly uses `random_state` seeds **42, 52, 62** in both the repeated width and repeated depth experiments. Results can still vary across software versions and environments. Figures `10_Egitim_Dogrulama_Kayip.png` and `11_Egitim_Dogrulama_RMSE.png` come from a **separate 250-epoch control experiment**, not the original early-stopping run. These should not be presented as loss curves from that original run.
 
 This repository provides the underlying research materials; it does not independently establish that every literature reference has been verified.
